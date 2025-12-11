@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif; 
+}
+
+body {
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.body {
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 0;
+    background-color: #f0f0f0;
+    width: 100%;
+}
+
+.login-box {
+    width: 350px;
+    background: white;
+    padding: 30px; 
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.login-box h2 {
+    color: #4a00e0; 
+    text-align: center;
+    font-size: 2.5em; 
+    margin-bottom: 30px; 
+    margin-top: 0;
+}
+
+.login-box label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    font-size: 1em;
+}
+
+.login-box button[type="submit"] {
+    width: 100%;
+    height: 45px;
+    background-color: #4a00e0; 
+    color: white; 
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+    margin-top: 10px; 
+}
+
+.login-box button[type="submit"]:hover {
+    background-color: #8e2de2;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    color: #ffd700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    z-index: 100;
+}
+
+header .logo {
+    font-size: 24px; 
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffb703;
+}
+
+
+.hero {
+    height: 100vh;
+    background: url('https://media.istockphoto.com/id/1340256496/photo/shot-of-a-young-woman-decorating-a-table-with-place-card-holders-in-preparation-for-a-wedding.jpg?s=612x612&w=0&k=20&c=gBQHa3_HywGsZv4MYRfvMpWAsgLLUkQvyMbG-lHBOSo=') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; 
+    text-align: center;
+    padding-top: 70px; 
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+}
+
+.hero-content p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+
+h2 {
+    text-align: center;
+    color: #4a00e0; 
+    font-size: 2.5em;
+    padding-top: 80px; 
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 50px 70px;
+}
+
+
+
+.about {
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 20px auto;
+    color:#333333;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+
+.services {
+    background-color: white;
+}
+
+.services .service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.service-box {
+    background: #4a00e0;
+    color: rgb(253, 250, 250);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, background 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-box h3 {
+    margin-bottom: 10px;
+    color: #ffda44;
+}
+
+.service-box:hover {
+    background: #ffb703;
+    color: #4a00e0;
+    transform: translateY(-5px);
+}
+
+
+.gallery-container {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px; 
+    max-width: 1200px;
+    margin: 0 auto 50px auto; 
+}
+
+.gallery-container img {
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-container img:hover {
+    transform: scale(1.02); 
+}
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input:not([type="date"]),
+form input[type="date"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+form textarea {
+    height: 120px; 
+    resize: vertical; 
+}
+
+form button[type="submit"] {
+    width: 100%;
+    height: 45px;
+    background-color: #4a00e0; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+    margin-top: 10px; 
+}
+
+form button[type="submit"]:hover {
+    background-color: #8e2de2;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #3b08f2;
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ffda44;
+}
