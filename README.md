@@ -53,7 +53,7 @@ Clone the repository:
 
 Bash
 
-git clone [https://github.com/your-username/jashnika-events.git](https://github.com/your-username/jashnika-events.git)
+git clone https://github.com/umangjaiswal0723/Umang-Event-organizing-website-Jashnika-.git
 Navigate to the folder:
 
 Bash
